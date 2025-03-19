@@ -58,7 +58,6 @@ try:
     x = torch.tensor([[1,2],[3,4]]) # 形状（2，2）
     y = torch.tensor([[5,6,7]]) # 形状（1，3）
     result = torch.cat((x,y),dim=0) # 在行方向上拼接，此时列方向上维度不一致，将抛出错误
-    print(result)
 except Exception as e:
     print(e)
 
